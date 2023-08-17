@@ -47,7 +47,7 @@ a{
 }
 
 .section-1 a{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 10px;
 }
 /* section 2 */
@@ -69,9 +69,9 @@ a{
 }
 
 .section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
+    /* display: block; */
+    /* padding: 5px; */
+    /* font-size: 1.2rem; */
     padding-left: 0;
     /* width: 100px; */
 }
