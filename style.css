@@ -4,15 +4,20 @@
 
 .grid-2{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
+    max-width: 720px;
+    /* display: flex; */
+    margin: 0 auto;
 }
 
 body{
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #101214;
-    color: #7A7C80;
+    /* background-color: #101214;
+    color: #7A7C80; */
+    background-color: #fff;
+    color: #333;
 }
 
 h1, h2, h3, h4 {
@@ -21,17 +26,18 @@ h1, h2, h3, h4 {
 }
 
 h2,.white{
-    color: #fff;
+    color: #333;
     transition: all 0.75s ease-in-out;
 }
 
 a{
-    color: #7A7C80;
+    /* color: #7A7C80; */
+    color: #333;
     text-decoration: none;
 }
 /* section 1 */
 .section-1{
-    padding-top: 40vh;
+    padding-top: 15vh;
     text-align: center;
 }
 
@@ -47,14 +53,15 @@ a{
 }
 
 .section-1 a{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 10px;
 }
 /* section 2 */
 .section-2{
     padding-top: 7vh;
-    width: 70%;
+    /* width: 70%; */
     padding-bottom: 7vh;
+    margin: 0 auto;
 }
 
 .section-2 h2{
@@ -77,14 +84,14 @@ a{
 }
 /* animations / utilities */
 .section-2 a:hover{
-    color: #fff;
+    color: #888;
     text-decoration: underline;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .section-1 a:hover{
-    color: #fff;
+    color: #888;
     cursor: pointer;
     transition: 0.3s;
 }
