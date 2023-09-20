@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 
 h2,.white{
     color: #333;
-    transition: all 0.75s ease-in-out;
+    /* transition: all 0.75s ease-in-out; */
 }
 
 a{
@@ -87,13 +87,13 @@ a{
     color: #888;
     text-decoration: underline;
     cursor: pointer;
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 
 .section-1 a:hover{
     color: #888;
     cursor: pointer;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 .white:hover{
