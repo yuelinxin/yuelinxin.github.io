@@ -51,7 +51,7 @@
         <div class="col-md-9 p-5">
             
             <div class="mb-5">
-                <h4>Education</h4>
+                <h4 class="mb-3">Education & Experience</h4>
                 <div class="card mb-3">
                     <div class="card-body">
                     <h5 class="card-title">University of California, Irvine</h5>
@@ -121,111 +121,144 @@
                     <li><span>Average: 88.75(UK standard), 95.2(US standard)</span></li>
                     <li><span>GPA: 3.85</span></li>
                 </ul> -->
+
+                <div class="mb-5">
+                    <h4 class="mb-3">Research & Publications</h4>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="images/optron.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title">
+                                    Optron: Better Medical Image Registration via Optimizing in the Loop
+                                </h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">
+                                        Yicheng Chen*, Shengxiang Ji*, <b>Yuelin Xin</b>*, Kun Han, Xiaohui Xie 
+                                        <br/> Summer 2023
+                                    </small>
+                                </p>
+                                <p class="card-text">
+                                    <small>
+                                        A general training architecture that combines the advantages of deep-learning-based
+                                        methods and optimization-based methods to achieve better performance. Optron provides 
+                                        pseudo supervision to the model by optimizing the model's output in the loop, which 
+                                        allows the model to learn from the optimization process and improve its performance.
+                                    </small>
+                                </p>
+                                <a href="https://arxiv.org/abs/2308.15216" target="_blank">
+                                    <button class="btn btn-danger btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
+                                <a href="https://github.com/miraclefactory/optron" target="_blank">
+                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="images/2sds.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title">
+                                    Scene Separation & Data Selection: Temporal Segmentation Algorithm for Real-time Video Stream Analysis
+                                </h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">
+                                        <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*
+                                        <br/>Summer 2022
+                                    </small>
+                                </p>
+                                <p class="card-text">
+                                    <small>
+                                        A novel temporal segmentation algorithm used in real-time video stream 
+                                        interpretation. It works together with CNN models to improve the model's 
+                                        ability to handle temporal data by introducing the temporal concept of a 
+                                        "scene", so CNNs can be used to interpret videos in a whole new way.
+                                    </small>
+                                </p>
+                                <a href="https://arxiv.org/abs/2308.00210" target="_blank">
+                                    <button class="btn btn-danger btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
+                                <a href="https://github.com/miraclefactory/2sds" target="_blank">
+                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="images/kernel-trans.gif" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title">
+                                    Kernel Transformer: Swin Transformer's Evil Twin
+                                </h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">
+                                        Yicheng Chen*, Shengxiang Ji*, <b>Yuelin Xin</b>*, Kun Han, Xiaohui Xie
+                                        <br/>Summer 2023
+                                    </small>
+                                </p>
+                                <p class="card-text">
+                                    <small>
+                                        Kernel Transformer is a new backbone network for vision tasks. It is based on
+                                        the sliding-window mechanism rather than the shifted-window used in Swin Transformer. 
+                                        This design enables the model to have a wider range of receptive field and more efficient 
+                                        gradient propagation. This architecture is also more flexible and can potentially benefit 
+                                        dense prediction tasks.
+                                    </small>
+                                </p>
+                                <a href="https://github.com/miraclefactory/kernel-transformer" target="_blank">
+                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="images/hsaois.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title">
+                                    Hyper Speed Automatic Optical Inspection System
+                                </h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">
+                                        <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*, Jiuqiang Li, Qiyu Ou
+                                        <br/>Spring 2022
+                                    </small>
+                                </p>
+                                <p class="card-text">
+                                    <small>
+                                        The HSAOIS is an object detection
+                                        system that is designed and fine tuned based on YOLOv5 to detect defects 
+                                        on computer motherboards. We made great improvements on top of what YOLOv5 
+                                        already provides, by modifying the model's backbone, and introducing the 
+                                        2SDS algorithm, we were able to increase the inference speed by 25% without 
+                                        losing accuracy.
+                                    </small>
+                                </p>
+                                <a href="https://github.com/miraclefactory/submarine-hsaois" target="_blank">
+                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <h5>
+                        Project lisa
+                    </h5>
+                    <p>
+                        Coming soon :)
+                    </p> -->
+                </div>
             
-            <div class="mb-5">
-                <h4>Research</h4>
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="images/optron.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h5 class="card-title">
-                                Optron: Better Medical Image Registration via Optimizing in the Loop
-                            </h5>
-                            <p class="card-text">
-                                A general training architecture that combines the advantages of deep-learning-based
-                                methods and optimization-based methods to achieve better performance. Optron provides 
-                                pseudo supervision to the model by optimizing the model's output in the loop, which 
-                                allows the model to learn from the optimization process and improve its performance.
-                            </p>
-                            <a href="https://arxiv.org/abs/2308.15216" target="_blank">
-                                <button class="btn btn-danger btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
-                            <a href="https://github.com/miraclefactory/optron" target="_blank">
-                                <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="images/2sds.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h5 class="card-title">
-                                Scene Separation & Data Selection algorithm
-                            </h5>
-                            <p class="card-text">
-                                A novel temporal segmentation algorithm used in real-time video stream 
-                                interpretation. It works together with CNN models to improve the model's 
-                                ability to handle temporal data by introducing the temporal concept of a 
-                                "scene", such that CNNs can be used to interpret videos in a whole new way.
-                            </p>
-                            <a href="https://arxiv.org/abs/2308.00210" target="_blank">
-                                <button class="btn btn-danger btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
-                            <a href="https://github.com/miraclefactory/2sds" target="_blank">
-                                <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="images/kernel-trans.gif" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h5 class="card-title">
-                                Kernel Transformer: Swin Transformer's Evil Twin
-                            </h5>
-                            <p class="card-text">
-                                Kernel Transformer is a new backbone network for vision tasks. It is based on
-                                the sliding-window mechanism rather than the shifted-window used in Swin Transformer. 
-                                This design enables the model to have a wider range of receptive field and more efficient 
-                                gradient propagation. This architecture is also more flexible and can potentially benefit 
-                                dense prediction tasks.
-                            </p>
-                            <a href="https://github.com/miraclefactory/kernel-transformer" target="_blank">
-                                <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="images/hsaois.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h5 class="card-title">
-                                Hyper Speed Automatic Optical Inspection System
-                            </h5>
-                            <p class="card-text">
-                                The HSAOIS is an object detection
-                                system that is designed and fine tuned based on YOLOv5 to detect defects 
-                                on computer motherboards. We made great improvements on top of what YOLOv5 
-                                already provides, by modifying the model's backbone, and introducing the 
-                                2SDS algorithm, we were able to increase the inference speed by 25% without 
-                                losing accuracy.
-                            </p>
-                            <a href="https://github.com/miraclefactory/submarine-hsaois" target="_blank">
-                                <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <h5>
-                    Project lisa
-                </h5>
-                <p>
-                    Coming soon :)
-                </p> -->
-            </div>
             <div class="mb-5">
                 <h4>Memberships</h4>
                 <p>IEEE, ACM, AAAS</p>
