@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5 {
 
 a {
     color: inherit;
+    width: fit-content;
+    height: fit-content;
     /* color: #333; */
     /* text-decoration: none; */
 }
@@ -46,4 +48,12 @@ a:hover {
 .card {
     /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
     overflow: hidden;
+}
+
+.btn-research {
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
