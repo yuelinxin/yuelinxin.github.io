@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
         crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/leeds.png">
+    <link rel="icon" href="images/leeds.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Yuelin Xin | University of Leeds</title>
 </head>
-<body>
-    <div class="grid-2">
-        <div class="section-1">
-            <!-- <i class="fas fa-code fa-5x white"></i> -->
-            <img src="assets/profile-photo.jpg" alt="profile" class="profile" width="150">
-            <h2>Yuelin Xin</h2>
-            <p>University of Leeds</p>
-            <p>Leeds, UK</p>
-            <a href="https://twitter.com/yuelin_xin" target="_blank">
+<body class="d-flex justify-content-center">
+    <div class="row m-0" id="wrapper">
+        <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
+            <strong>I'm a prospective PhD student!</strong> If you are interested please contact <a href="mailto:sc20yx2@leeds.ac.uk">sc20yx2@leeds.ac.uk</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="col-md-3 p-5 text-center" id="avatar-block">
+            <img src="images/profile-photo.jpg" alt="profile" id="avatar" class="mb-4" width="165">
+            <h3>Yuelin Xin</h3>
+            <p>
+                University of Leeds<br/>
+                Leeds, UK
+            </p>
+            <a href="https://twitter.com/yuelinxin" target="_blank">
                 <i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/yuelin-xin-7a9514253/" target="_blank">
                 <i class="fab fa-linkedin"></i></a>
@@ -30,103 +39,210 @@
             <a href="https://scholar.google.com/citations?user=JTa0ZXYAAAAJ&hl=en" target="_blank">
                 <i class="fas fa-graduation-cap"></i></a>
         </div>
-        <div class="section-2">
-            <h2>About</h2>
-            <span>
-                Hi there, this is the homepage of <b>Yuelin Xin</b> (<b>Jackie</b>). 
-                He's currently an undergraduate student at the University of Leeds, 
-                studying Computer Science. He's also a researcher in computer vision 
-                and ML systems.
-            </span>
-            <h2>Education</h2>
-                <h3>University of California, Irvine (June 2023 - Sep 2023)</h3>
-                <span>
-                    He was a summer research student at UCI, where he worked on medical 
-                    image registration problems using state-of-the-art methods, working with 
-                    <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>.
-                </span>
-                <h3>University of Leeds (Sep 2022 - Jun 2024)</h3>
-                <span>
-                    He's currently studying at the University of Leeds, 
-                    where he continues his study in Computer Science. He's 
-                    a projected First Class student.
-                </span>
-                <br/>
-                <h3>Southwest Jiaotong University (Sep 2020 - Jun 2022)</h3>
-                <span>
-                    He studied for 2 years at SWJTU, where he majored in Computer Science. 
-                    He was awarded <b>Best Student</b> in year 1, and was given a 
-                    scholarship for his outstanding academic performance. He also started 
-                    his academic career as a computer vision researcher at SWJTU, working with 
-                    <a href="https://zhiguolong.github.io/" target="_blank">Dr. Zhiguo Long</a>.
-                </span>
-            <h2>Academic Performance</h2>
-                <h3>University of Leeds</h3>
+        <div class="col-md-9 p-5">
+            <div class="mb-4">
+                <h4>About</h4>
+                <p>
+                    Hi there, this is the homepage of <b>Yuelin Xin</b> (<b>Jackie</b>). 
+                    He's currently an undergraduate student at the University of Leeds, 
+                    studying Computer Science. He's also a researcher in computer vision 
+                    and ML systems.
+                </p>
+            </div>
+            <div class="mb-4">
+                <h4>Education</h4>
+                <div class="card mb-3">
+                    <div class="card-body">
+                    <h5 class="card-title">University of California, Irvine</h5>
+                    <p class="card-text">
+                        <small class="text-body-secondary">June 2023 - Sep 2023</small>
+                    </p>
+                    <p class="card-text">
+                        He was a summer research student at UCI, where he worked on medical 
+                        image registration problems using state-of-the-art methods, working with 
+                        <a href="https://www.ics.uci.edu/~xhx/" target="_blank">
+                        <i class="bi bi-link-45deg"></i>Prof. Xiaohui Xie</a>.
+                    </p>
+                    <button class="btn btn-outline-primary disabled">Transcript unavailable</button>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                    <h5 class="card-title">University of Leeds</h5>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Sep 2022 - Jun 2024</small>
+                    </p>
+                    <p class="card-text">
+                        He's currently studying at the University of Leeds, 
+                        where he continues his study in Computer Science. He's 
+                        a projected First Class student. He's also pursuing research 
+                        in ML systems with <a href="https://zwang4.github.io/" target="_blank">
+                        <i class="bi bi-link-45deg"></i>Prof. Zheng Wang</a>.
+                    </p>
+                    <a href="files/transcript.pdf" target="_blank">
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-envelope-paper"></i> View transcript
+                        </button>
+                    </a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                    <h5 class="card-title">Southwest Jiaotong University</h5>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Sep 2020 - Jun 2022</small>
+                    </p>
+                    <p class="card-text">
+                        He studied for 2 years at SWJTU, where he majored in Computer Science. 
+                        He was awarded <b>Best Student</b> in year 1, and was given a 
+                        scholarship for his outstanding academic performance. He also started 
+                        his academic career as a computer vision researcher at SWJTU, working with 
+                        <a href="https://zhiguolong.github.io/" target="_blank">
+                        <i class="bi bi-link-45deg"></i>Dr. Zhiguo Long</a>.
+                    </p>
+                    <a href="files/transcript.pdf" target="_blank">
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-envelope-paper"></i> View transcript
+                        </button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <h4>Academic Performance</h4>
+                <h5>University of Leeds</h5>
                 <ul>
                     <li><span>Projected Average: 82(UK standard), 94.0(US standard)</span></li>
                     <li><span>Projected GPA: 3.92</span></li>
                 </ul>
-                <h3>Southwest Jiaotong University</h3>
+                <h5>Southwest Jiaotong University</h5>
                 <ul>
                     <li><span>Average: 88.75(UK standard), 95.2(US standard)</span></li>
                     <li><span>GPA: 3.85</span></li>
-                </ul>
-            <h2>Research</h2>
-                <h3>
-                    <a href="https://arxiv.org/abs/2308.15216" target="_blank">
-                        Optron: Better Medical Image Registration via Optimizing in the Loop
-                    </a>
-                </h3>
-                <span>
-                    A general training architecture that combines the advantages of deep-learning-based
-                    methods and optimization-based methods to achieve better performance. Optron provides 
-                    pseudo supervision to the model by optimizing the model's output in the loop, which 
-                    allows the model to learn from the optimization process and improve its performance.
-                </span>
-                <h3>
-                    <a href="https://arxiv.org/abs/2308.00210" target="_blank">
-                        Scene Separation & Data Selection algorithm
-                    </a>
-                </h3>
-                <span>
-                    A novel temporal segmentation algorithm used in real-time video stream 
-                    interpretation. It works together with CNN models to improve the model's 
-                    ability to handle temporal data by introducing the temporal concept of a 
-                    "scene", such that CNNs can be used to interpret videos in a whole new way.
-                </span>
-                <h3>
-                    <a href="https://github.com/miraclefactory/submarine-hsaois" target="_blank">
-                        Hyper Speed Automatic Optical Inspection System
-                    </a>
-                </h3>
-                <span>
-                    The HSAOIS is an object detection
-                    system that is designed and fine tuned based on YOLOv5 to detect defects 
-                    on computer motherboards. We made great improvements on top of what YOLOv5 
-                    already provides, by modifying the model's backbone, and introducing the 
-                    2SDS algorithm, we were able to increase the inference speed by 25% without 
-                    losing accuracy.
-                </span>
-                <h3>
+                </ul> -->
+            
+            <div class="mb-4">
+                <h4>Research</h4>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/optron.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://arxiv.org/abs/2308.15216" target="_blank">
+                                    Optron: Better Medical Image Registration via Optimizing in the Loop
+                                </a>
+                            </h5>
+                            <p class="card-text">
+                                A general training architecture that combines the advantages of deep-learning-based
+                                methods and optimization-based methods to achieve better performance. Optron provides 
+                                pseudo supervision to the model by optimizing the model's output in the loop, which 
+                                allows the model to learn from the optimization process and improve its performance.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/2sds.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://arxiv.org/abs/2308.00210" target="_blank">
+                                    Scene Separation & Data Selection algorithm
+                                </a>
+                            </h5>
+                            <p class="card-text">
+                                A novel temporal segmentation algorithm used in real-time video stream 
+                                interpretation. It works together with CNN models to improve the model's 
+                                ability to handle temporal data by introducing the temporal concept of a 
+                                "scene", such that CNNs can be used to interpret videos in a whole new way.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/kernel-trans.gif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://github.com/miraclefactory/kernel-transformer" target="_blank">
+                                    Kernel Transformer: Swin Transformer's Evil Twin
+                                </a>
+                            </h5>
+                            <p class="card-text">
+                                Kernel Transformer is a new backbone network for vision tasks. It is based on
+                                the sliding-window mechanism rather than the shifted-window used in Swin Transformer. 
+                                This design enables the model to have a wider range of receptive field and more efficient 
+                                gradient propagation. This architecture is also more flexible and can potentially benefit 
+                                dense prediction tasks.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/hsaois.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://github.com/miraclefactory/submarine-hsaois" target="_blank">
+                                    Hyper Speed Automatic Optical Inspection System
+                                </a>
+                            </h5>
+                            <p class="card-text">
+                                The HSAOIS is an object detection
+                                system that is designed and fine tuned based on YOLOv5 to detect defects 
+                                on computer motherboards. We made great improvements on top of what YOLOv5 
+                                already provides, by modifying the model's backbone, and introducing the 
+                                2SDS algorithm, we were able to increase the inference speed by 25% without 
+                                losing accuracy.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <h5>
                     Project lisa
-                </h3>
-                <span>
+                </h5>
+                <p>
                     Coming soon :)
-                </span>
-            <h2>Memberships</h2>
-                <span>IEEE, ACM, AAAS</span>
-            <h2>Contact</h2>
-            <span><a href="mailto:sc20yx2@leeds.ac.uk">
-                sc20yx2@leeds.ac.uk
-            </a></span> / 
-            <span><a href="mailto:yuelix1@uci.edu">
-                yuelix1@uci.edu
-            </a></span>
-            <h2>Resume</h2>
-            <span><a href="/assets/resume.pdf" target="_blank">
-                Check out my resume here.</a>
-            </span>
+                </p> -->
+            </div>
+            <div class="mb-4">
+                <h4>Memberships</h4>
+                <p>IEEE, ACM, AAAS</p>
+            </div>
+            <div class="mb-4">
+                <h4>Contact</h4>
+                <p>
+                    <a href="mailto:sc20yx2@leeds.ac.uk">sc20yx2@leeds.ac.uk</a> or 
+                    <a href="mailto:yuelix1@uci.edu">yuelix1@uci.edu</a>
+                </p>
+            </div>
+            <div class="mb-4">
+                <h4>Resume</h4>
+                <p><a href="/files/resume.pdf" target="_blank">
+                    Check out my resume here.</a>
+                </p>
+            </div>
         </div>
     </div>
+    <!-- <hr/>
+    <footer>
+        CopyRight &copy; 2023 Yuelin Xin
+    </footer> -->
 </body>
 </html>
