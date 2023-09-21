@@ -18,12 +18,13 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-    color: #333;
+    color: inherit;
+    /* color: #333; */
     /* text-decoration: none; */
 }
 
 a:hover {
-    color: #777;
+    color: #999;
 }
 
 #wrapper {
