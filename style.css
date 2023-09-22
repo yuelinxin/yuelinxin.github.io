@@ -52,8 +52,17 @@ a:hover {
 
 .btn-research {
     font-size: 13px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.btn-collapse {
+    font-size: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 20px;
 }
