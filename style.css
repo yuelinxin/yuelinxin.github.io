@@ -66,3 +66,10 @@ a:hover {
     padding-right: 9px;
     border-radius: 20px;
 }
+
+.bg-tag {
+    border-radius: 20px;
+    font-weight: 600;
+    color: rgb(13, 110, 253);
+    background-color: rgba(13, 110, 253, 0.25) !important;
+}
