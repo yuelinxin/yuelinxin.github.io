@@ -49,5 +49,12 @@
         </footer>
         
     </div>
+    <script>
+        window.onload = function() {
+            var currentYear = new Date().getFullYear();
+            var copyrightElement = document.querySelector('#copyright-year');
+            copyrightElement.innerHTML = currentYear;
+        }
+    </script>
 </body>
 </html>
