@@ -19,41 +19,55 @@
     <div class="mb-5" id="blog-header">
         <h1>Blogs</h1>
     </div>
-    <div class="row wrapper m-auto text-center" id="blog-body">
+    <div class="row wrapper m-auto" id="blog-body">
 
-        <div class="col-md-8 col-sm-12 text-center m-auto">
-            <h3 class="mb-5">
-                All Blogs
-            </h3>
-            <!-- <img src="images/github-bk.svg" width="300" />
-            <p style="color: #888;">
-                No content yet, please come back later.
-            </p> -->
-            <div class="blog-card mb-4 mx-3">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <h5 class="blog-time">Mar 1, 2024</h5>
+        <div class="col-md-8 col-sm-12 m-auto">
+            <ul class="nav nav-underline d-flex justify-content-center mb-5" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tech-tab" data-bs-toggle="tab" href="#blog-tech" role="tab" aria-controls="blog-tech" aria-selected="true">Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="quote-tab" data-bs-toggle="tab" href="#blog-quote" role="tab" aria-controls="blog-quote" aria-selected="false">Quote</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="misc-tab" data-bs-toggle="tab" href="#blog-misc" role="tab" aria-controls="blog-misc" aria-selected="false">Misc</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="blog-tech" role="tabpanel">
+                    <p class="text-center">No blog post yet. Please check back later.</p>
+                </div>
+                <div class="tab-pane fade" id="blog-quote" role="tabpanel">
+                    <div class="blog-card mb-4 mx-3">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <h5 class="blog-time">Mar 1, 2024</h5>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="quote">
+                                    "To see the world, things dangerous to come to, to see behind walls, draw closer,
+                                    to find each other, and to feel. That is the purpose of life."<br/>
+                                    "认识世界，克服困难，洞悉所有，贴近生活，寻找真爱，感受彼此。此乃生活之真谛。"
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        <p class="quote">
-                            "To see the world, things dangerous to come to, to see behind walls, draw closer,
-                            to find each other, and to feel. That is the purpose of life."<br/>
-                            "认识世界，克服困难，洞悉所有，贴近生活，寻找真爱，感受彼此。此乃生活之真谛。"
-                        </p>
+                    <div class="blog-card mb-4 mx-3">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <h5 class="blog-time">Mar 1, 2024</h5>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="quote">
+                                    "...to boldly go where no one has gone before."<br/>
+                                    "...勇敢地探索未知的边疆。"
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="blog-card mb-4 mx-3">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <h5 class="blog-time">Mar 1, 2024</h5>
-                    </div>
-                    <div class="col-md-9">
-                        <p class="quote">
-                            "...to boldly go where no one has gone before."<br/>
-                            "...勇敢地探索未知的边疆。"
-                        </p>
-                    </div>
+                <div class="tab-pane fade" id="blog-misc" role="tabpanel">
+                    <p class="text-center">No blog post yet. Please check back later.</p>
                 </div>
             </div>
         </div>
