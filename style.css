@@ -130,3 +130,26 @@ a:hover {
     font-weight: 600;
     color: #fff;
 }
+
+.blog-card
+{
+    overflow: hidden;
+    text-align: left;
+}
+
+.blog-time
+{
+    height: 100%;
+    /* text-align: right; */
+}
+
+/* .blog-body
+{
+} */
+
+.quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: thin;
+    color: #333;
+}
