@@ -21,21 +21,33 @@
             <a class="navbar-brand" href="index.html">
                 Yuelin Xin
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#home-nav"
+                aria-controls="home-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav">
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#research" class="nav-link">Research</a>
-                    <a href="#resume" class="nav-link">Resume</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <a href="blog.html" class="nav-link" target="_blank">
-                        Blogs
-                        <span class="badge text-bg-primary">New</span>
-                    </a>
-                </div>
+            <div class="collapse navbar-collapse" id="home-nav">
+                <ul class="nav nav-pills navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-bs-toggle="tab" aria-controls="home" aria-selected="true">
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#research" class="nav-link" data-bs-toggle="tab" aria-controls="research" aria-selected="false">
+                            Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link" data-bs-toggle="tab" aria-controls="education" aria-selected="false">
+                            Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#misc" class="nav-link" data-bs-toggle="tab" aria-controls="misc" aria-selected="false">
+                            Misc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link" target="_blank">
+                            Blogs <i class="bi bi-link-45deg"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
@@ -61,17 +73,6 @@
             <a href="https://scholar.google.com/citations?user=JTa0ZXYAAAAJ&hl=en" target="_blank">
                 <i class="fas fa-graduation-cap"></i></a>
             <div class="mt-4 text-start">
-                <!-- <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
-                    <strong>I'm a prospective PhD student!</strong> If you are interested please contact <a href="mailto:sc20yx2@leeds.ac.uk">sc20yx2@leeds.ac.uk</a>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div> -->
-                <!-- <hr/> -->
-                <p class="text-body-secondary">
-                    <b>News</b><br/>
-                    <b>[2024 Jan]</b> If you are interested in collaborating in research or open-source projects, please reach out <a href="mailto:sc20yx2@leeds.ac.uk">here</a>. <br/>
-                    <b>[2023 Dec]</b> Our newest version of the OFG paper is now available on arXiv. Check it out <a href="https://arxiv.org/abs/2308.15216" target="_blank">here</a>.
-                </p>
-                <!-- <hr/> -->
                 <p class="text-body-secondary">
                     <b>Labels</b> <br/>
                     <span class="badge bg-tag">computer vision</span>
@@ -83,267 +84,327 @@
                 </p>
             </div>
         </div>
-        <div class="col-md-9 p-5" id="content-block">
+        <div class="col-md-9 p-5 tab-content" id="content-block">
 
-            <div class="mb-5">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h4 class="m-0">About</h4>
-                    <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInt" aria-expanded="false" aria-controls="collapseInt">
-                        <i class="bi bi-arrows-collapse"></i>
-                    </button>
+            <div class="tab-pane fade show active" id="home">
+                <div class="mb-5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h4 class="m-0">About</h4>
+                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInt" aria-expanded="false" aria-controls="collapseInt">
+                            <i class="bi bi-arrows-collapse"></i>
+                        </button>
+                    </div>
+                    <div class="collapse show" id="collapseInt">
+                        <p>
+                            Hi there, this is the homepage of <b>Yuelin Xin</b> (<b>Jackie</b>). 
+                            He is currently an undergraduate student at the University of Leeds, 
+                            studying Computer Science. He is also a researcher in computer vision 
+                            and ML systems.
+                        </p>
+                        <p>
+                            His current research interest lies in the exploration of vision models and learning paradigms 
+                            that produce generalizable and robust representations for 2D and 3D data. He's also interested 
+                            in the downstream applications of these methods in a medical context, especially tasks with limited 
+                            labeled data.
+                        </p>
+                        <p>
+                            He is currently working with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a> 
+                            and <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a> in computer vision and medical image analysis at the 
+                            University of Leeds and the University of California, Irvine.
+                        </p>
+                    </div>
                 </div>
-                <div class="collapse show" id="collapseInt">
-                    <p>
-                        Hi there, this is the homepage of <b>Yuelin Xin</b> (<b>Jackie</b>). 
-                        He's currently an undergraduate student at the University of Leeds, 
-                        studying Computer Science. He's also a researcher in computer vision 
-                        and ML systems.
-                    </p>
-                    <p>
-                        His current research interest lies in the exploration of vision models and learning paradigms 
-                        that produce generalizable and robust representations for 2D and 3D data. He's also interested 
-                        in the downstream applications of these methods in a medical context, especially tasks with limited 
-                        labeled data.
-                    </p>
+
+                <div class="mb-5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h4 class="m-0">News</h4>
+                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNews" aria-expanded="false" aria-controls="collapseNews">
+                            <i class="bi bi-arrows-collapse"></i>
+                        </button>
+                    </div>
+                    <div class="collapse show" id="collapseNews">
+                        <div class="news-card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <h5 class="mb-0">Mar, 2024</h5>
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="mb-0">
+                                        <a href="https://miraclefactory.ai/" target="_blank">Our community</a> is looking for talented researchers in computer vision / machine learning systems / 
+                                        information representation and reasoning, reach out <a href="mailto:contact@miraclefactory.ai">here</a> if you are interested! 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <h5 class="mb-0">Jan, 2024</h5>
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="mb-0">
+                                        If you are interested in collaborating in research or open-source projects, please reach out <a href="mailto:sc20yx2@leeds.ac.uk">here</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card mb-4">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <h5 class="mb-0">Dec, 2023</h5>
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="mb-0">
+                                        Our newest version of the OFG paper is now available on arXiv. Check it out <a href="https://arxiv.org/abs/2308.15216" target="_blank">here</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="mb-5" id="education">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h4 class="m-0">Education & Experience</h4>
-                    <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdu" aria-expanded="false" aria-controls="collapseEdu">
-                        <i class="bi bi-arrows-collapse"></i>
-                    </button>
-                </div>
-                <div class="collapse show" id="collapseEdu">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                        <h5 class="card-title">University of California, Irvine</h5>
-                        <p class="card-text">
-                            <small class="text-body-secondary">June 2023 - Sep 2023</small>
-                        </p>
-                        <p class="card-text">
-                            He was a visiting research student at UCI, where he worked on medical 
-                            image registration problems using state-of-the-art methods, working with 
-                            <a href="https://www.ics.uci.edu/~xhx/" target="_blank">
-                            <i class="bi bi-link-45deg"></i>Prof. Xiaohui Xie</a>.
-                        </p>
-                        <!-- <a href="files/transcript_uci.pdf" target="_blank">
-                            <button class="btn btn-outline-primary">
-                                <i class="bi bi-envelope-paper"></i> View transcript
-                            </button>
-                        </a> -->
-                        </div>
+            <div class="tab-pane fade" id="education">
+                <div class="mb-5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h4 class="m-0">Education & Experience</h4>
+                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdu" aria-expanded="false" aria-controls="collapseEdu">
+                            <i class="bi bi-arrows-collapse"></i>
+                        </button>
                     </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                        <h5 class="card-title">University of Leeds</h5>
-                        <p class="card-text">
-                            <small class="text-body-secondary">Sep 2022 - Jun 2024</small>
-                        </p>
-                        <p class="card-text">
-                            He's currently studying at the University of Leeds, 
-                            where he continues his study in Computer Science. He's 
-                            a projected First Class student. He's conducting research in 
-                            computer vision for medicine with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank"><i class="bi bi-link-45deg"></i>Dr. Sharib Ali</a>. 
-                            He's also pursuing research in ML systems with <a href="https://zwang4.github.io/" target="_blank"><i class="bi bi-link-45deg"></i>Prof. Zheng Wang</a>.
-                        </p>
-                        <!-- <a href="files/transcript_updated.pdf" target="_blank">
-                            <button class="btn btn-outline-primary">
-                                <i class="bi bi-envelope-paper"></i> View transcript
-                            </button>
-                        </a> -->
+                    <div class="collapse show" id="collapseEdu">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                            <h5 class="card-title">University of California, Irvine</h5>
+                            <p class="card-text">
+                                <small class="text-body-secondary">June 2023 - Sep 2023</small>
+                            </p>
+                            <p class="card-text">
+                                He was a visiting research student at UCI, where he worked on medical 
+                                image registration problems using state-of-the-art methods, working with 
+                                <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>.
+                            </p>
+                            <!-- <a href="files/transcript_uci.pdf" target="_blank">
+                                <button class="btn btn-outline-primary">
+                                    <i class="bi bi-envelope-paper"></i> View transcript
+                                </button>
+                            </a> -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                        <h5 class="card-title">Southwest Jiaotong University</h5>
-                        <p class="card-text">
-                            <small class="text-body-secondary">Sep 2020 - Jun 2022</small>
-                        </p>
-                        <p class="card-text">
-                            He studied for 2 years at SWJTU in Computer Science. 
-                            He was awarded <b>Best Student</b> in year 1, and was given a 
-                            scholarship for his outstanding academic performance. He also started 
-                            his academic career as a computer vision researcher at SWJTU, working with 
-                            <a href="https://zhiguolong.github.io/" target="_blank">
-                            <i class="bi bi-link-45deg"></i>Dr. Zhiguo Long</a>.
-                        </p>
-                        <!-- <a href="files/transcript.pdf" target="_blank">
-                            <button class="btn btn-outline-primary">
-                                <i class="bi bi-envelope-paper"></i> View transcript
-                            </button>
-                        </a> -->
+                        <div class="card mb-3">
+                            <div class="card-body">
+                            <h5 class="card-title">University of Leeds</h5>
+                            <p class="card-text">
+                                <small class="text-body-secondary">Sep 2022 - Jun 2024</small>
+                            </p>
+                            <p class="card-text">
+                                He's currently studying at the University of Leeds, 
+                                where he continues his study in Computer Science. He's 
+                                a projected First Class student. He's conducting research in 
+                                computer vision for medicine with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a>. 
+                                He's also pursuing research in ML systems with <a href="https://zwang4.github.io/" target="_blank">Prof. Zheng Wang</a>.
+                            </p>
+                            <!-- <a href="files/transcript_updated.pdf" target="_blank">
+                                <button class="btn btn-outline-primary">
+                                    <i class="bi bi-envelope-paper"></i> View transcript
+                                </button>
+                            </a> -->
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                            <h5 class="card-title">Southwest Jiaotong University</h5>
+                            <p class="card-text">
+                                <small class="text-body-secondary">Sep 2020 - Jun 2022</small>
+                            </p>
+                            <p class="card-text">
+                                He studied for 2 years at SWJTU in Computer Science. 
+                                He was awarded <b>Best Student</b> in year 1, and was given a 
+                                scholarship for his outstanding academic performance. He also started 
+                                his academic career as a computer vision researcher at SWJTU, working with 
+                                <a href="https://zhiguolong.github.io/" target="_blank">
+                                Dr. Zhiguo Long</a>.
+                            </p>
+                            <!-- <a href="files/transcript.pdf" target="_blank">
+                                <button class="btn btn-outline-primary">
+                                    <i class="bi bi-envelope-paper"></i> View transcript
+                                </button>
+                            </a> -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mb-5" id="research">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h4 class="m-0">Research & Publications</h4>
-                    <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
-                        <i class="bi bi-arrows-collapse"></i>
-                    </button>
+            <div class="tab-pane fade" id="research">
+                <div class="mb-5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h4 class="m-0">Research & Publications</h4>
+                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+                            <i class="bi bi-arrows-collapse"></i>
+                        </button>
+                    </div>
+                    <div class="collapse show" id="collapseRes">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <img src="images/ofg.png" alt="the ofg framework">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">
+                                        On-the-Fly Guidance Training for Medical Image Registration 
+                                    </h5>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Yicheng Chen*, Shengxiang Ji*, <b>Yuelin Xin</b>*, Kun Han, Xiaohui Xie 
+                                            <br/> Summer 2023, <b>Submitted for Review</b>
+                                        </small>
+                                    </p>
+                                    <p class="card-text">
+                                        <small>
+                                            A training framework that successfully unites learning-based methods with optimization techniques to enhance
+                                            the training of learning-based registration models. OFG provides guidance with pseudo ground truth to the 
+                                            model by optimizing the model's output on-the-fly, which allows the model to learn from the optimization 
+                                            process and improve its performance.
+                                        </small>
+                                    </p>
+                                    <a href="https://arxiv.org/abs/2308.15216" target="_blank">
+                                        <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
+                                    <a href="https://github.com/miraclefactory/on-the-fly-guidance" target="_blank">
+                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <img src="images/2sds.jpg" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">
+                                        Scene Separation & Data Selection: Temporal Segmentation Algorithm for Real-time Video Stream Analysis
+                                    </h5>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*
+                                            <br/>Summer 2022, <b>IJCAI 2022 Workshop</b>
+                                        </small>
+                                    </p>
+                                    <p class="card-text">
+                                        <small>
+                                            A novel temporal segmentation algorithm used in real-time video stream 
+                                            interpretation. It works together with CNN models to improve the model's 
+                                            ability to handle temporal data by introducing the temporal concept of a 
+                                            "scene", so CNNs can be used to interpret videos in a whole new way.
+                                        </small>
+                                    </p>
+                                    <a href="https://arxiv.org/abs/2308.00210" target="_blank">
+                                        <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
+                                    <a href="https://github.com/miraclefactory/2sds" target="_blank">
+                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                    <a href="https://youtu.be/jerIZczBCow" target="_blank">
+                                        <button class="btn btn-danger btn-research"><i class="bi bi-youtube"></i> Keynote</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <img src="images/kernel-trans.gif" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">
+                                        Kernel Transformer: Swin Transformer's Evil Twin
+                                    </h5>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            <b>Yuelin Xin</b>, Kun Han, Xiaohui Xie, Sharib Ali
+                                            <br/>Fall 2023
+                                        </small>
+                                    </p>
+                                    <p class="card-text">
+                                        <small>
+                                            Kernel Transformer is a new backbone network for vision tasks. It is based on
+                                            the sliding-window mechanism rather than the shifted-window used in Swin Transformer. 
+                                            This design enables the model to have a wider range of receptive field and more efficient 
+                                            gradient propagation. This architecture is also more flexible and can potentially benefit 
+                                            dense prediction tasks.
+                                        </small>
+                                    </p>
+                                    <a href="https://github.com/miraclefactory/kernel-transformer" target="_blank">
+                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <img src="images/hsaois.jpg" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">
+                                        Hyper Speed Automatic Optical Inspection System
+                                    </h5>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*, Jiuqiang Li, Qiyu Ou
+                                            <br/>Spring 2022
+                                        </small>
+                                    </p>
+                                    <p class="card-text">
+                                        <small>
+                                            The HSAOIS is an object detection
+                                            system that is designed and fine tuned based on YOLOv5 to detect defects 
+                                            on computer motherboards. We made great improvements on top of what YOLOv5 
+                                            already provides, by modifying the model's backbone, and introducing the 
+                                            2SDS algorithm, we were able to increase the inference speed by 25% without 
+                                            losing accuracy.
+                                        </small>
+                                    </p>
+                                    <a href="https://github.com/miraclefactory/submarine-hsaois" target="_blank">
+                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h5>
+                            Project lisa
+                        </h5>
+                        <p>
+                            Coming soon :)
+                        </p> -->
+                    </div>
                 </div>
-                <div class="collapse show" id="collapseRes">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center">
-                                <img src="images/ofg.png" alt="the ofg framework">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                <h5 class="card-title">
-                                    On-the-Fly Guidance Training for Medical Image Registration 
-                                </h5>
-                                <p class="card-text">
-                                    <small class="text-body-secondary">
-                                        Yicheng Chen*, Shengxiang Ji*, <b>Yuelin Xin</b>*, Kun Han, Xiaohui Xie 
-                                        <br/> Summer 2023, <b>Submitted for Review</b>
-                                    </small>
-                                </p>
-                                <p class="card-text">
-                                    <small>
-                                        A training framework that successfully unites learning-based methods with optimization techniques to enhance
-                                        the training of learning-based registration models. OFG provides guidance with pseudo ground truth to the 
-                                        model by optimizing the model's output on-the-fly, which allows the model to learn from the optimization 
-                                        process and improve its performance.
-                                    </small>
-                                </p>
-                                <a href="https://arxiv.org/abs/2308.15216" target="_blank">
-                                    <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
-                                <a href="https://github.com/miraclefactory/on-the-fly-guidance" target="_blank">
-                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center">
-                                <img src="images/2sds.jpg" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                <h5 class="card-title">
-                                    Scene Separation & Data Selection: Temporal Segmentation Algorithm for Real-time Video Stream Analysis
-                                </h5>
-                                <p class="card-text">
-                                    <small class="text-body-secondary">
-                                        <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*
-                                        <br/>Summer 2022, <b>IJCAI 2022 Workshop</b>
-                                    </small>
-                                </p>
-                                <p class="card-text">
-                                    <small>
-                                        A novel temporal segmentation algorithm used in real-time video stream 
-                                        interpretation. It works together with CNN models to improve the model's 
-                                        ability to handle temporal data by introducing the temporal concept of a 
-                                        "scene", so CNNs can be used to interpret videos in a whole new way.
-                                    </small>
-                                </p>
-                                <a href="https://arxiv.org/abs/2308.00210" target="_blank">
-                                    <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
-                                <a href="https://github.com/miraclefactory/2sds" target="_blank">
-                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                <a href="https://youtu.be/jerIZczBCow" target="_blank">
-                                    <button class="btn btn-danger btn-research"><i class="bi bi-youtube"></i> Keynote</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center">
-                                <img src="images/kernel-trans.gif" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                <h5 class="card-title">
-                                    Kernel Transformer: Swin Transformer's Evil Twin
-                                </h5>
-                                <p class="card-text">
-                                    <small class="text-body-secondary">
-                                        <b>Yuelin Xin</b>, Kun Han, Xiaohui Xie, Sharib Ali
-                                        <br/>Fall 2023
-                                    </small>
-                                </p>
-                                <p class="card-text">
-                                    <small>
-                                        Kernel Transformer is a new backbone network for vision tasks. It is based on
-                                        the sliding-window mechanism rather than the shifted-window used in Swin Transformer. 
-                                        This design enables the model to have a wider range of receptive field and more efficient 
-                                        gradient propagation. This architecture is also more flexible and can potentially benefit 
-                                        dense prediction tasks.
-                                    </small>
-                                </p>
-                                <a href="https://github.com/miraclefactory/kernel-transformer" target="_blank">
-                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center">
-                                <img src="images/hsaois.jpg" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                <h5 class="card-title">
-                                    Hyper Speed Automatic Optical Inspection System
-                                </h5>
-                                <p class="card-text">
-                                    <small class="text-body-secondary">
-                                        <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*, Jiuqiang Li, Qiyu Ou
-                                        <br/>Spring 2022
-                                    </small>
-                                </p>
-                                <p class="card-text">
-                                    <small>
-                                        The HSAOIS is an object detection
-                                        system that is designed and fine tuned based on YOLOv5 to detect defects 
-                                        on computer motherboards. We made great improvements on top of what YOLOv5 
-                                        already provides, by modifying the model's backbone, and introducing the 
-                                        2SDS algorithm, we were able to increase the inference speed by 25% without 
-                                        losing accuracy.
-                                    </small>
-                                </p>
-                                <a href="https://github.com/miraclefactory/submarine-hsaois" target="_blank">
-                                    <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <h5>
-                        Project lisa
-                    </h5>
+            </div>
+
+            <div class="tab-pane fade" id="misc">
+                <div class="mb-5" id="membership">
+                    <h4>Memberships</h4>
+                    <p>IEEE, ACM, Miracle Factory, AAAS</p>
+                </div>
+    
+                <div class="mb-5" id="resume">
+                    <h4>Resume</h4>
+                    <p><a href="files/resume.pdf" target="_blank">
+                        <i class="bi bi-file-earmark-person"></i> Check out my resume here.</a>
+                    </p>
+                </div>
+    
+                <div class="mb-5" id="contact">
+                    <h4>Contact</h4>
                     <p>
-                        Coming soon :)
-                    </p> -->
+                        Leeds: <a href="mailto:sc20yx2@leeds.ac.uk"><i class="bi bi-envelope"></i> sc20yx2@leeds.ac.uk</a><br/> 
+                        UCI: <a href="mailto:yuelix1@uci.edu"><i class="bi bi-envelope"></i> yuelix1@uci.edu</a><br/>
+                        ACM: <a href="mailto:yuelinxin@acm.org"><i class="bi bi-envelope"></i> yuelinxin@acm.org</a>
+                    </p>
                 </div>
-            </div>
-            
-            <div class="mb-5" id="membership">
-                <h4>Memberships</h4>
-                <p>IEEE, ACM, Miracle Factory, AAAS</p>
-            </div>
-
-            <div class="mb-5" id="resume">
-                <h4>Resume</h4>
-                <p><a href="files/resume.pdf" target="_blank">
-                    <i class="bi bi-file-earmark-person"></i> Check out my resume here.</a>
-                </p>
-            </div>
-
-            <div class="mb-5" id="contact">
-                <h4>Contact</h4>
-                <p>
-                    Leeds: <a href="mailto:sc20yx2@leeds.ac.uk"><i class="bi bi-envelope"></i> sc20yx2@leeds.ac.uk</a><br/> 
-                    UCI: <a href="mailto:yuelix1@uci.edu"><i class="bi bi-envelope"></i> yuelix1@uci.edu</a><br/>
-                    ACM: <a href="mailto:yuelinxin@acm.org"><i class="bi bi-envelope"></i> yuelinxin@acm.org</a>
-                </p>
             </div>
 
         </div>

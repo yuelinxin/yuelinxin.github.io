@@ -42,10 +42,13 @@ a:hover {
 /* index.html */
 
 #navbar {
-    background-color: rgb(203, 218, 252);
+    /* background-color: rgb(203, 218, 252); */
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgba(0,0,0,0.1);
     font-family: 'Poppins', 'Roboto', sans-serif;
+    /* font-family: Helvetica, sans-serif; */
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-left: 15px;
     margin-right: 15px;
     width: calc(100% - 30px);
@@ -55,17 +58,35 @@ a:hover {
     color: black;
 }
 
-#navbar a:hover {
+/* #navbar a:hover {
     color: #999;
+} */
+
+#home-nav .nav-link
+{
+    border-radius: 20px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-right: 7px !important;
 }
 
-#navbar .nav-link {
+#home-nav .nav-link:hover
+{
+    background-color: rgba(13, 110, 253, 0.25) !important;
+}
+
+#home-nav .active
+{
+    color: white !important;
+}
+
+/* #navbar .nav-link {
     margin-right: 18px;
 }
 
 #navbar .navbar-brand {
     margin-right: 27px !important;
-}
+} */
 
 #avatar-block i {
     font-size: 20px;
@@ -106,6 +127,14 @@ a:hover {
     font-weight: 600;
     color: rgb(13, 110, 253);
     background-color: rgba(13, 110, 253, 0.25) !important;
+}
+
+.news-card
+{
+    overflow: hidden;
+    text-align: left;
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
 }
 
 
