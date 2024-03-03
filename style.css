@@ -58,10 +58,6 @@ a:hover {
     color: black;
 }
 
-/* #navbar a:hover {
-    color: #999;
-} */
-
 #home-nav .nav-link
 {
     border-radius: 20px !important;
@@ -80,18 +76,20 @@ a:hover {
     color: white !important;
 }
 
-/* #navbar .nav-link {
-    margin-right: 18px;
-}
-
 #navbar .navbar-brand {
-    margin-right: 27px !important;
-} */
+    margin-right: 25px !important;
+}
 
 #avatar-block i {
     font-size: 20px;
     margin-left: 6px;
     margin-right: 6px;
+}
+
+#avatar-block img
+{
+    width: 100%;
+    max-width: 165px;
 }
 
 .card img {
