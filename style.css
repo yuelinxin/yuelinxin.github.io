@@ -73,7 +73,8 @@ a:hover {
 
 #home-nav .active
 {
-    color: white !important;
+    /* color: white !important; */
+    background-color: rgba(13, 110, 253, 0.25) !important;
 }
 
 #navbar .navbar-brand {
@@ -131,7 +132,7 @@ a:hover {
 {
     overflow: hidden;
     text-align: left;
-    border-left: 3px solid #ccc;
+    border-left: 3px solid #ddd;
     padding-left: 15px;
 }
 
