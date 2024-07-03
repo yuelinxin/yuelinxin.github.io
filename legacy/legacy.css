@@ -1,0 +1,199 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: Helvetica, sans-serif; */
+    /* font-weight: 500; */
+}
+
+a {
+    color: inherit;
+    width: fit-content;
+    height: fit-content;
+    /* color: #333; */
+    /* text-decoration: none; */
+}
+
+a:hover {
+    color: #999;
+}
+
+.wrapper {
+    max-width: 1144px;
+}
+
+
+
+
+
+/* index.html */
+
+#navbar {
+    /* background-color: rgb(203, 218, 252); */
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgba(0,0,0,0.1);
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    /* font-family: Helvetica, sans-serif; */
+    font-size: 15px;
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px);
+}
+
+#navbar a {
+    color: black;
+}
+
+#home-nav .nav-link
+{
+    border-radius: 20px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-right: 7px !important;
+}
+
+#home-nav .nav-link:hover
+{
+    background-color: rgba(13, 110, 253, 0.25) !important;
+}
+
+#home-nav .active
+{
+    /* color: white !important; */
+    background-color: rgba(13, 110, 253, 0.25) !important;
+}
+
+#navbar .navbar-brand {
+    margin-right: 25px !important;
+}
+
+#avatar-block i {
+    font-size: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#avatar-block img
+{
+    width: 100%;
+    max-width: 165px;
+}
+
+.card img {
+    width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
+}
+
+.card {
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.btn-research {
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.btn-collapse {
+    font-size: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 20px;
+}
+
+.bg-tag {
+    border-radius: 20px;
+    font-weight: 600;
+    color: rgb(13, 110, 253);
+    background-color: rgba(13, 110, 253, 0.25) !important;
+}
+
+.news-card
+{
+    overflow: hidden;
+    text-align: left;
+    border-left: 3px solid #ddd;
+    padding-left: 15px;
+}
+
+.school-logo
+{
+    width: 100px !important; 
+    position: absolute !important; 
+    top: -20px !important; 
+    right: -20px !important; 
+    opacity: 0.25;
+    z-index: -1;
+}
+
+
+/* blog.html */
+
+#blog-header {
+    background-color: rgb(203, 218, 252);
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/blog-bk.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#blog-header h1 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-underline a
+{
+    color: #333 !important;
+}
+
+.blog-card
+{
+    overflow: hidden;
+    text-align: left;
+}
+
+.blog-time
+{
+    height: 100%;
+    /* text-align: right; */
+}
+
+/* .blog-body
+{
+} */
+
+.quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: thin;
+    color: #333;
+}

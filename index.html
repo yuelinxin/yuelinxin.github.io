@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
@@ -15,568 +15,572 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Yuelin Xin</title>
 </head>
-<body class="d-flex justify-content-center">
-    <div class="row m-0 wrapper">
-        <div class="navbar navbar-expand-lg px-4 py-2 mt-4" id="navbar">
-            <a class="navbar-brand" href="index.html">
-                Yuelin Xin
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#home-nav"
-                aria-controls="home-nav" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <div class="navbar navbar-expand-lg bg-body-tertiary p-1">
+        <a class="navbar-brand mx-3 p-2" href="#" style="font-size: 1.3rem; font-family: 'Quicksand'; margin-bottom: 3px">
+            <!-- <img src="cilix_logo.jpg" alt="Coming Soon!" class="logo" /> -->
+            cilix
+        </a>
+        <div>
+            <button class="navbar-toggler" type="button" onclick="toggleMenu()">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="home-nav">
-                <ul class="nav nav-pills navbar-nav">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active" data-bs-toggle="tab" aria-controls="home" aria-selected="true">
-                            Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#research" class="nav-link" data-bs-toggle="tab" aria-controls="research" aria-selected="false">
-                            Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link" data-bs-toggle="tab" aria-controls="education" aria-selected="false">
-                            Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#misc" class="nav-link" data-bs-toggle="tab" aria-controls="misc" aria-selected="false">
-                            Misc</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="blog.html" class="nav-link" target="_blank">
-                            Blogs <i class="bi bi-link-45deg"></i></a>
-                    </li>
-                </ul>
+        </div>
+        <div id="navbarMenu" class="mobile-hide">
+            <div class="nav navbar-nav" onclick="toggleMenu()">
+                <a href="#home" class="nav-link mx-3 nav-item-custom active" data-bs-toggle="tab" aria-controls="home" aria-selected="true" onclick="openInfoBanner()">
+                    <span>Home</span>
+                    <i class="bi bi-arrow-right hide"></i>
+                </a>
+                <a href="#research" class="nav-link mx-3 nav-item-custom" data-bs-toggle="tab" aria-controls="research" aria-selected="false" onclick="toggleInfoBanner()">
+                    <span>Research</span>
+                    <i class="bi bi-arrow-right hide"></i>
+                </a>
+                <a href="#education" class="nav-link mx-3 nav-item-custom" data-bs-toggle="tab" aria-controls="education" aria-selected="false" onclick="toggleInfoBanner()">
+                    <span>Education</span>
+                    <i class="bi bi-arrow-right hide"></i>
+                </a>
+                <!-- <a href="#experience" class="nav-link mx-3 nav-item-custom" data-bs-toggle="tab" aria-controls="experience" aria-selected="false" onclick="toggleInfoBanner()">
+                    <span>Experience</span>
+                    <i class="bi bi-arrow-right hide"></i>
+                </a> -->
+                <a href='#misc' class="nav-link mx-3 nav-item-custom" data-bs-toggle="tab" aria-controls="misc" aria-selected="false" onclick="toggleInfoBanner()">
+                    <span>Misc</span>
+                    <i class="bi bi-arrow-right hide"></i>
+                </a>
+                <a href="blog.html" class="nav-link mx-3 nav-item-custom" target="_blank">
+                    <span>Blogs <i class="bi bi-link-45deg"></i></span>
+                    <i class="bi bi-arrow-right hide"></i>
+                </a>
             </div>
         </div>
-        <!-- <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
-            <strong>I'm a prospective PhD student!</strong> If you are interested please contact <a href="mailto:sc20yx2@leeds.ac.uk">sc20yx2@leeds.ac.uk</a>
-            If you are interested in collaborating in research or open-source projects, please contact <a href="mailto:sc20yx2@leeds.ac.uk">sc20yx2@leeds.ac.uk</a>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div> -->
-        <div class="col-md-12 col-lg-3 p-5 text-center" id="avatar-block">
-            <img src="images/profile-photo.jpg" alt="profile" id="avatar" class="mb-4">
-            <h3>Yuelin Xin</h3>
-            <p>
-                UC Irvine<br/>
-                Irvine, CA
-            </p>
-            <a href="https://twitter.com/yuelinxin" target="_blank">
-                <i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/yuelin-xin-7a9514253/" target="_blank">
-                <i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/yuelinxin" target="_blank">
-                <i class="fab fa-github"></i></a>
-            <a href="https://orcid.org/0000-0002-9732-2414" target="_blank">
-                <i class="fab fa-orcid"></i></a>
-            <a href="https://scholar.google.com/citations?user=JTa0ZXYAAAAJ&hl=en" target="_blank">
-                <i class="fas fa-graduation-cap"></i></a>
-            <div class="mt-4 text-start">
-                <p class="text-body-secondary">
-                    <b class="w-100 text-center">Contact</b> 
-                    <br/>
-                    <a href="mailto:yuelix1@uci.edu">yuelix1@uci.edu</a><br/>
-                    <a href="mailto:sc20yx2@leeds.ac.uk">sc20yx2@leeds.ac.uk</a><br/> 
-                </p>
-                <p class="text-body-secondary">
-                    <b class="w-100 text-center">Labels</b> 
-                    <br/>
-                    <span class="badge bg-tag">computer vision</span>
-                    <span class="badge bg-tag">machine learning</span>
-                    <span class="badge bg-tag">3d vision</span>
-                    <span class="badge bg-tag">medical image analysis</span>
-                    <span class="badge bg-tag">compilers</span>
-                    <span class="badge bg-tag">ml systems</span>
-                </p>
+    </div>
+    <div class="m-0" id="main">
+        <div class="info-banner" id="info-banner">
+            <div class="wrapper d-flex justify-content-between m-auto px-4 py-5 align-items-center">
+                <div class="first">
+                    <h1>Yuelin Xin</h1>
+                    <h4>University of California, Irvine</h4>
+                    <div class="mt-5">
+                        <a href="https://twitter.com/yuelinxin" target="_blank">
+                            <i class="fab fa-twitter profile-info-icon"></i></a>
+                        <a href="https://www.linkedin.com/in/yuelin-xin-7a9514253/" target="_blank">
+                            <i class="fab fa-linkedin profile-info-icon"></i></a>
+                        <a href="https://github.com/yuelinxin" target="_blank">
+                            <i class="fab fa-github profile-info-icon"></i></a>
+                        <a href="https://orcid.org/0000-0002-9732-2414" target="_blank">
+                            <i class="fab fa-orcid profile-info-icon"></i></a>
+                        <a href="https://scholar.google.com/citations?user=JTa0ZXYAAAAJ&hl=en" target="_blank">
+                            <i class="fas fa-graduation-cap profile-info-icon"></i></a>
+                        <div class="profile-email-area">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:yuelix1@uci.edu">yuelix1@uci.edu</a><br/>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/caltech.jpeg" alt="your name here" id="avatar" class="second">
             </div>
         </div>
-        <div class="col-md-12 col-lg-9 p-5 tab-content" id="content-block">
 
-            <div class="tab-pane fade show active" id="home">
-                <div class="mb-5">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h4 class="m-0">About</h4>
-                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInt" aria-expanded="false" aria-controls="collapseInt">
-                            <i class="bi bi-arrows-collapse"></i>
-                        </button>
+        <div class="row m-0 mt-4 p-0 wrapper" style="flex-grow: 1;">
+            <div class="col-md-12 col-lg-12 p-4 tab-content">
+
+                <div class="tab-pane fade show active" id="home">
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h4 class="m-0">About</h4>
+                            <button class="btn btn-light btn-collapse hide" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInt" aria-expanded="false" aria-controls="collapseInt">
+                                <i class="bi bi-arrows-collapse"></i>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="collapseInt">
+                            <p>
+                                Hi there, this is the homepage of <b>Yuelin Xin</b> (<b>Jackie</b>). 
+                                He is an incoming computer science PhD student at the University of California, Irvine.
+                                He is also a researcher in computer vision and ML systems.
+                            </p>
+                            <p>
+                                His current research interest lies in the exploration of vision models and learning paradigms 
+                                that produce generalizable and robust representations for 2D and 3D data. He's also interested 
+                                in the downstream applications of these methods in a medical context, especially tasks with limited 
+                                labeled data.
+                            </p>
+                            <p>
+                                He is currently working with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a> 
+                                and <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a> in computer vision and medical image analysis at the 
+                                University of Leeds and the University of California, Irvine.
+                            </p>
+                        </div>
                     </div>
-                    <div class="collapse show" id="collapseInt">
-                        <p>
-                            Hi there, this is the homepage of <b>Yuelin Xin</b> (<b>Jackie</b>). 
-                            He is an incoming computer science PhD student at the University of California, Irvine.
-                            He is also a researcher in computer vision and ML systems.
+
+                    <div class="mb-5" style="padding-bottom: 40px">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h4 class="m-0">News</h4>
+                            <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNews" aria-expanded="false" aria-controls="collapseNews">
+                                <i class="bi bi-arrows-collapse"></i>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="collapseNews">
+                            <div class="news-card">
+                                <div class="row g-0">
+                                    <div class="col-md-2 news-date">
+                                        <h4 class="mb-0">2024</h4>
+                                        <h5 class="mb-0 news-date-month">June</h5>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0">
+                                            Our paper "On-the-Fly Guidance Training for Medical Image Registration" has been accepted to MICCAI 2024, 
+                                            check it out <a href="https://arxiv.org/abs/2308.15216" target="_blank">here</a>!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="row g-0">
+                                    <div class="col-md-2 news-date">
+                                        <h4 class="mb-0">2024</h4>
+                                        <h5 class="mb-0 news-date-month">June</h5>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0">
+                                            I have completed my undergraduate study at the University of Leeds 🎉 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="row g-0">
+                                    <div class="col-md-2 news-date">
+                                        <h4 class="mb-0">2024</h4>
+                                        <h5 class="mb-0 news-date-month">April</h5>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0">
+                                            I will be returning to UCI for my PhD starting Fall 2024, advised by <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>. 
+                                            I will be working on 3D vision and medical vision.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="row g-0">
+                                    <div class="col-md-2 news-date">
+                                        <h4 class="mb-0">2024</h4>
+                                        <h5 class="mb-0 news-date-month">January</h5>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0">
+                                            If you are interested in collaborating with me in research or open-source projects, please reach out <a href="mailto:sc20yx2@leeds.ac.uk">here</a>. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="row g-0">
+                                    <div class="col-md-2 news-date">
+                                        <h4 class="mb-0">2023</h4>
+                                        <h5 class="mb-0 news-date-month">December</h5>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0">
+                                            Our newest version of the paper "On-the-Fly Guidance Training for Medical Image Registration" is now available on arXiv. 
+                                            Check it out <a href="https://arxiv.org/abs/2308.15216" target="_blank">here</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="row g-0">
+                                    <div class="col-md-2 news-date">
+                                        <h4 class="mb-0">2023</h4>
+                                        <h5 class="mb-0 news-date-month">December</h5>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0">
+                                            I will start working with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a> on my final project at the University of Leeds.
+                                            Focusing on computer vision for medicine.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="row g-0">
+                                    <div class="col-md-2 news-date">
+                                        <h4 class="mb-0">2023</h4>
+                                        <h5 class="mb-0 news-date-month">December</h5>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0">
+                                            I will be visiting UCI from June to September, working in <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>'s group as a research student.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="research">
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h4 class="m-0">Research & Publications</h4>
+                            <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+                                <i class="bi bi-arrows-collapse"></i>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="collapseRes">
+                            <div class="card research-card">
+                                <div class="row g-0">
+                                    <div class="col-md-4 d-flex align-items-center">
+                                        <img src="images/plt_deform.png" alt="deformation learning">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <h5 class="card-title">
+                                            Medical Visual Representation Learning via Deformation Reconstruction
+                                        </h5>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">
+                                                <b>Yuelin Xin</b>, Kun Han, Xiaohui Xie, Sharib Ali 
+                                                <br/> Ongoing
+                                            </small>
+                                        </p>
+                                        <p class="card-text">
+                                            <small>
+                                                A self-supervised learning approach on learning useful and robust medical 
+                                                visual representations across multiple modalities. We propose a pre-text task 
+                                                based on deformation reconstruction rather than masked image modeling, which 
+                                                is more suitable for medical images, as medical image classification depends 
+                                                on small visual differences that can be masked by MIM approaches.
+                                            </small>
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div class="card research-card">
+                                <div class="row g-0">
+                                    <div class="col-md-4 d-flex align-items-center">
+                                        <img src="images/ofg.png" alt="the ofg framework">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <h5 class="card-title">
+                                            On-the-Fly Guidance Training for Medical Image Registration 
+                                        </h5>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">
+                                                Yicheng Chen*, Shengxiang Ji*, <b>Yuelin Xin</b>*, Kun Han, Xiaohui Xie 
+                                                <br/> Summer 2023, <b>MICCAI 2024</b>
+                                            </small>
+                                        </p>
+                                        <p class="card-text">
+                                            <small>
+                                                A training framework that successfully unites learning-based methods with optimization techniques to enhance
+                                                the training of learning-based registration models. OFG provides guidance with pseudo ground truth to the 
+                                                model by optimizing the model's output on-the-fly, which allows the model to learn from the optimization 
+                                                process and improve its performance.
+                                            </small>
+                                        </p>
+                                        <a href="https://arxiv.org/abs/2308.15216" target="_blank">
+                                            <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
+                                        <a href="https://github.com/miraclefactory/on-the-fly-guidance" target="_blank">
+                                            <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div class="card research-card">
+                                <div class="row g-0">
+                                    <div class="col-md-4 d-flex align-items-center">
+                                        <img src="images/kernel-trans.gif" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <h5 class="card-title">
+                                            Kernel Transformer: Swin Transformer's Evil Twin
+                                        </h5>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">
+                                                <b>Yuelin Xin</b>, Kun Han, Xiaohui Xie, Sharib Ali
+                                                <br/>Fall 2023
+                                            </small>
+                                        </p>
+                                        <p class="card-text">
+                                            <small>
+                                                Kernel Transformer is a new backbone network for vision tasks. It is based on
+                                                the sliding-window mechanism rather than the shifted-window used in Swin Transformer. 
+                                                This design enables the model to have a wider range of receptive field and more efficient 
+                                                gradient propagation. This architecture is also more flexible and can potentially benefit 
+                                                dense prediction tasks.
+                                            </small>
+                                        </p>
+                                        <a href="https://github.com/miraclefactory/kernel-transformer" target="_blank">
+                                            <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div class="card research-card">
+                                <div class="row g-0">
+                                    <div class="col-md-4 d-flex align-items-center">
+                                        <img src="images/2sds.jpg" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <h5 class="card-title">
+                                            Scene Separation & Data Selection: Temporal Segmentation Algorithm for Real-time Video Stream Analysis
+                                        </h5>
+                                        <p class="card-text">
+                                            <small class="text-body-secondary">
+                                                <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*
+                                                <br/>Summer 2022, <b>IJCAI 2022 Workshop</b>
+                                            </small>
+                                        </p>
+                                        <p class="card-text">
+                                            <small>
+                                                A novel temporal segmentation algorithm used in real-time video stream 
+                                                interpretation. It works together with CNN models to improve the model's 
+                                                ability to handle temporal data by introducing the temporal concept of a 
+                                                "scene", so CNNs can be used to interpret videos in a whole new way.
+                                            </small>
+                                        </p>
+                                        <a href="https://arxiv.org/abs/2308.00210" target="_blank">
+                                            <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
+                                        <a href="https://github.com/miraclefactory/2sds" target="_blank">
+                                            <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
+                                        <a href="https://youtu.be/jerIZczBCow" target="_blank">
+                                            <button class="btn btn-danger btn-research"><i class="bi bi-youtube"></i> Keynote</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="education">
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h4 class="m-0">Education</h4>
+                            <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdu" aria-expanded="false" aria-controls="collapseEdu">
+                                <i class="bi bi-arrows-collapse"></i>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="collapseEdu">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                <h5 class="card-title">University of California, Irvine</h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">Starting Sep 2024</small>
+                                    <small class="text-body-secondary"> · PhD</small>
+                                </p>
+                                <p class="card-text">
+                                    He will be returning to UCI for his PhD in Computer Science, research in 3D vision and medical vision, 
+                                    advised by <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>.
+                                </p>
+                                <img src="images/uci.png" alt="uci" class="school-logo">
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                <h5 class="card-title">University of California, Irvine</h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">Jun 2023 - Sep 2023</small>
+                                    <small class="text-body-secondary"> · Visiting Research</small>
+                                </p>
+                                <p class="card-text">
+                                    He was a visiting research student at UCI, where he worked on medical 
+                                    image registration problems using state-of-the-art methods, working with 
+                                    <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>.
+                                </p>
+                                <img src="images/uci.png" alt="uci" class="school-logo">
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                <h5 class="card-title">University of Leeds</h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">Sep 2022 - Jun 2024</small>
+                                    <small class="text-body-secondary"> · Undergraduate</small>
+                                </p>
+                                <p class="card-text">
+                                    He studied for 2 years at the University of Leeds in Computer Science.
+                                    He's a projected First Class student. He has conducted research in 
+                                    computer vision for medicine with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a>. 
+                                    He has also pursued research in ML systems with <a href="https://zwang4.github.io/" target="_blank">Prof. Zheng Wang</a>.
+                                </p>
+                                <img src="images/leeds-logo.png" alt="leeds" class="school-logo">
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                <h5 class="card-title">Southwest Jiaotong University</h5>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">Sep 2020 - Jun 2022</small>
+                                    <small class="text-body-secondary"> · Undergraduate</small>
+                                </p>
+                                <p class="card-text">
+                                    He studied for 2 years at SWJTU in Computer Science. 
+                                    He was awarded <b>Best Student</b> in year 1, and was given a 
+                                    scholarship for his outstanding academic performance. He also started 
+                                    his academic career as a computer vision researcher at SWJTU, working with 
+                                    <a href="https://zhiguolong.github.io/" target="_blank">
+                                    Dr. Zhiguo Long</a>.
+                                </p>
+                                <img src="images/swjtu.jpg" alt="swjtu" class="school-logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="experience">
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h4 class="m-0">Experience</h4>
+                            <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp" aria-expanded="false" aria-controls="collapseExp">
+                                <i class="bi bi-arrows-collapse"></i>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="collapseExp">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Institution 1</h5>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Jun 2024 - Jun 2024</small>
+                                        <small class="text-body-secondary"> · Position</small>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque at alias velit aspernatur asperiores magnam laboriosam maiores expedita nam corporis aliquid nobis natus maxime, sed enim voluptate quidem officia!
+                                    </p>
+                                    <img src="images/caltech.jpeg" alt="institution-1" class="school-logo">
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Institution 2</h5>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Jun 2024 - Jun 2024</small>
+                                        <small class="text-body-secondary"> · Position</small>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque at alias velit aspernatur asperiores magnam laboriosam maiores expedita nam corporis aliquid nobis natus maxime, sed enim voluptate quidem officia!
+                                    </p>
+                                    <img src="images/caltech.jpeg" alt="institution-2" class="school-logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="misc">
+
+                    <div class="mb-5" id="resume">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h4 class="m-0">Resume</h4>
+                        </div>
+                        <p><a href="files/resume.pdf" target="_blank">
+                            <i class="bi bi-file-earmark-person"></i> Check out my resume here.</a>
                         </p>
+                    </div>
+
+                    <div class="mb-5" id="membership">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h4 class="m-0">Memberships</h4>
+                        </div>
                         <p>
-                            His current research interest lies in the exploration of vision models and learning paradigms 
-                            that produce generalizable and robust representations for 2D and 3D data. He's also interested 
-                            in the downstream applications of these methods in a medical context, especially tasks with limited 
-                            labeled data.
+                            <b>IEEE</b>: since summer 2023<br/>
+                            <b>ACM</b>: since summer 2023<br/>
+                            <b>AAAS</b>: since spring 2021
                         </p>
+                    </div>
+
+                    <div class="mb-5" id="uni-hunter">
+                        <h4>Uni Hunter</h4>
                         <p>
-                            He is currently working with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a> 
-                            and <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a> in computer vision and medical image analysis at the 
-                            University of Leeds and the University of California, Irvine.
+                            I have been lucky enough to visit many universities around the world,  
+                            and I've been keeping a list of them (chronologically):
                         </p>
-                        <!-- <p>
-                            Vision research rooted in real-world applications.
-                        </p> -->
+                        <div class="card mb-3">
+                            <div style="height: 256px; overflow: scroll;">
+                                <ul>
+                                    <li>University of Electronic Science and Technology of China (2013)</li>
+                                    <li>Columbia University (2016)</li>
+                                    <li>Yale University (2016)</li>
+                                    <li>Princeton University (2016)</li>
+                                    <li>Harvard University (2016)</li>
+                                    <li>Massachusetts Institute of Technology (2016)</li>
+                                    <li>Brigham Young University (2016)</li>
+                                    <li>Sichuan University (2018)</li>
+                                    <li>Southwest Jiaotong University (2020)</li>
+                                    <li>Xihua University (2020)</li>
+                                    <li>University of Leeds (2022)</li>
+                                    <li>Leeds Beckett University (2022)</li>
+                                    <li>Imperial College London (2023)</li>
+                                    <li>University College London (2023)</li>
+                                    <li>University of California, Irvine (2023)</li>
+                                    <li>University of California, Merced (2023)</li>
+                                    <li>California Institute of Technology (2023)</li>
+                                    <li>University of California, Los Angeles (2023)</li>
+                                    <li>University of California, Santa Barbara (2023)</li>
+                                    <li>University of California, Santa Cruz (2023)</li>
+                                    <li>Stanford University (2023)</li>
+                                    <li>University of California, Berkeley (2023)</li>
+                                    <li>University of Oxford (2024)</li>
+                                    <li>University of Cambridge (2024)</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="mb-5" id="sim-racing">
+                        <h4>Sim Racing</h4>
+                        <p>
+                            I'm an amateur sim racer, I primarily race GT classes such as GT3, GT4 and GTE. 
+                            I've recently been racing the Porsche 911 RSR and the McLaren 720S GT3 Evo.
+                            My sim of choice is mainly Assetto Corsa, Assetto Corsa Competizione, and I'm getting into iRacing. 
+                        </p>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-3">
+                                <img src="images/porsche_logo.jpg" alt="porsche_logo" class="w-100">
+                            </div>
+                            <div class="col-9">
+                                <img src="images/porsche_911_rsr_2019.png" alt="porsche_911_rsr_2019" class="w-100">
+                            </div>
+                            <div class="col-3">
+                                <img src="images/mclaren_logo.png" alt="mclaren_logo" class="w-100">
+                            </div>
+                            <div class="col-9">
+                                <img src="images/mclaren_720s_gt3_evo.png" alt="mclaren_720s_gt3_evo" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="mb-5">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h4 class="m-0">News</h4>
-                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNews" aria-expanded="false" aria-controls="collapseNews">
-                            <i class="bi bi-arrows-collapse"></i>
-                        </button>
-                    </div>
-                    <div class="collapse show" id="collapseNews">
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Jun 2024</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        Our paper "On-the-Fly Guidance Training for Medical Image Registration" has been accepted to MICCAI 2024, 
-                                        check it out <a href="https://arxiv.org/abs/2308.15216" target="_blank">here</a>!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Jun 2024</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        I have completed my undergraduate study at the University of Leeds 🎉 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Apr 2024</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        I will be returning to UCI for my PhD starting Fall 2024, advised by <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>. 
-                                        I will be working on 3D vision and medical vision.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Mar 2024</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        <a href="https://miraclefactory.ai/" target="_blank">Our community</a> is looking for talented researchers in computer vision / machine learning systems / 
-                                        information representation and reasoning, reach out <a href="mailto:contact@miraclefactory.ai">here</a> if you are interested! 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Jan 2024</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        If you are interested in collaborating with me in research or open-source projects, please reach out <a href="mailto:sc20yx2@leeds.ac.uk">here</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Dec 2023</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        Our newest version of the paper "On-the-Fly Guidance Training for Medical Image Registration" is now available on arXiv. 
-                                        Check it out <a href="https://arxiv.org/abs/2308.15216" target="_blank">here</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Oct 2023</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        I will start working with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a> on my final project at the University of Leeds.
-                                        Focusing on computer vision for medicine.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-card mb-4">
-                            <div class="row g-0">
-                                <div class="col-md-2">
-                                    <h5 class="mb-0">Jun 2023</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <p class="mb-0">
-                                        I will be visiting UCI from June to September, working in <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>'s group as a research student.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="footer col-md-12 px-4 py-3">
+                <div class="cilix-info">
+                    Copyright &copy;
+                    <span id="copyright-year"></span>
+                    cilix. All rights reserved.
+                </div>
+                <div class="update">
+                    Last updated: 2024-07-03
                 </div>
             </div>
-            
-            <div class="tab-pane fade" id="education">
-                <div class="mb-5">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h4 class="m-0">Education & Experience</h4>
-                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdu" aria-expanded="false" aria-controls="collapseEdu">
-                            <i class="bi bi-arrows-collapse"></i>
-                        </button>
-                    </div>
-                    <div class="collapse show" id="collapseEdu">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                            <h5 class="card-title">University of California, Irvine</h5>
-                            <p class="card-text">
-                                <small class="text-body-secondary">Starting Sep 2024</small>
-                                <small class="text-body-secondary"> · PhD</small>
-                            </p>
-                            <p class="card-text">
-                                He will be returning to UCI for his PhD in Computer Science, research in 3D vision and medical vision, 
-                                advised by <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>.
-                            </p>
-                            <img src="images/uci.png" alt="uci" class="school-logo">
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                            <h5 class="card-title">University of California, Irvine</h5>
-                            <p class="card-text">
-                                <small class="text-body-secondary">Jun 2023 - Sep 2023</small>
-                                <small class="text-body-secondary"> · Visiting Research</small>
-                            </p>
-                            <p class="card-text">
-                                He was a visiting research student at UCI, where he worked on medical 
-                                image registration problems using state-of-the-art methods, working with 
-                                <a href="https://www.ics.uci.edu/~xhx/" target="_blank">Prof. Xiaohui Xie</a>.
-                            </p>
-                            <img src="images/uci.png" alt="uci" class="school-logo">
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                            <h5 class="card-title">University of Leeds</h5>
-                            <p class="card-text">
-                                <small class="text-body-secondary">Sep 2022 - Jun 2024</small>
-                                <small class="text-body-secondary"> · Undergraduate</small>
-                            </p>
-                            <p class="card-text">
-                                He studied for 2 years at the University of Leeds in Computer Science.
-                                He's a projected First Class student. He has conducted research in 
-                                computer vision for medicine with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a>. 
-                                He has also pursued research in ML systems with <a href="https://zwang4.github.io/" target="_blank">Prof. Zheng Wang</a>.
-                            </p>
-                            <img src="images/leeds-logo.png" alt="leeds" class="school-logo">
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                            <h5 class="card-title">Southwest Jiaotong University</h5>
-                            <p class="card-text">
-                                <small class="text-body-secondary">Sep 2020 - Jun 2022</small>
-                                <small class="text-body-secondary"> · Undergraduate</small>
-                            </p>
-                            <p class="card-text">
-                                He studied for 2 years at SWJTU in Computer Science. 
-                                He was awarded <b>Best Student</b> in year 1, and was given a 
-                                scholarship for his outstanding academic performance. He also started 
-                                his academic career as a computer vision researcher at SWJTU, working with 
-                                <a href="https://zhiguolong.github.io/" target="_blank">
-                                Dr. Zhiguo Long</a>.
-                            </p>
-                            <img src="images/swjtu.jpg" alt="swjtu" class="school-logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="research">
-                <div class="mb-5">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h4 class="m-0">Research & Publications</h4>
-                        <button class="btn btn-light btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
-                            <i class="bi bi-arrows-collapse"></i>
-                        </button>
-                    </div>
-                    <div class="collapse show" id="collapseRes">
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex align-items-center">
-                                    <img src="images/plt_deform.png" alt="deformation learning">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <h5 class="card-title">
-                                        Medical Visual Representation Learning via Deformation Reconstruction
-                                    </h5>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            <b>Yuelin Xin</b>, Kun Han, Xiaohui Xie, Sharib Ali 
-                                            <br/> Ongoing
-                                        </small>
-                                    </p>
-                                    <p class="card-text">
-                                        <small>
-                                            A self-supervised learning approach on learning useful and robust medical 
-                                            visual representations across multiple modalities. We propose a pre-text task 
-                                            based on deformation reconstruction rather than masked image modeling, which 
-                                            is more suitable for medical images, as medical image classification depends 
-                                            on small visual differences that can be masked by MIM approaches.
-                                        </small>
-                                    </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex align-items-center">
-                                    <img src="images/ofg.png" alt="the ofg framework">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <h5 class="card-title">
-                                        On-the-Fly Guidance Training for Medical Image Registration 
-                                    </h5>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            Yicheng Chen*, Shengxiang Ji*, <b>Yuelin Xin</b>*, Kun Han, Xiaohui Xie 
-                                            <br/> Summer 2023, <b>MICCAI 2024</b>
-                                        </small>
-                                    </p>
-                                    <p class="card-text">
-                                        <small>
-                                            A training framework that successfully unites learning-based methods with optimization techniques to enhance
-                                            the training of learning-based registration models. OFG provides guidance with pseudo ground truth to the 
-                                            model by optimizing the model's output on-the-fly, which allows the model to learn from the optimization 
-                                            process and improve its performance.
-                                        </small>
-                                    </p>
-                                    <a href="https://arxiv.org/abs/2308.15216" target="_blank">
-                                        <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
-                                    <a href="https://github.com/miraclefactory/on-the-fly-guidance" target="_blank">
-                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex align-items-center">
-                                    <img src="images/kernel-trans.gif" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <h5 class="card-title">
-                                        Kernel Transformer: Swin Transformer's Evil Twin
-                                    </h5>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            <b>Yuelin Xin</b>, Kun Han, Xiaohui Xie, Sharib Ali
-                                            <br/>Fall 2023
-                                        </small>
-                                    </p>
-                                    <p class="card-text">
-                                        <small>
-                                            Kernel Transformer is a new backbone network for vision tasks. It is based on
-                                            the sliding-window mechanism rather than the shifted-window used in Swin Transformer. 
-                                            This design enables the model to have a wider range of receptive field and more efficient 
-                                            gradient propagation. This architecture is also more flexible and can potentially benefit 
-                                            dense prediction tasks.
-                                        </small>
-                                    </p>
-                                    <a href="https://github.com/miraclefactory/kernel-transformer" target="_blank">
-                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex align-items-center">
-                                    <img src="images/2sds.jpg" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <h5 class="card-title">
-                                        Scene Separation & Data Selection: Temporal Segmentation Algorithm for Real-time Video Stream Analysis
-                                    </h5>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*
-                                            <br/>Summer 2022, <b>IJCAI 2022 Workshop</b>
-                                        </small>
-                                    </p>
-                                    <p class="card-text">
-                                        <small>
-                                            A novel temporal segmentation algorithm used in real-time video stream 
-                                            interpretation. It works together with CNN models to improve the model's 
-                                            ability to handle temporal data by introducing the temporal concept of a 
-                                            "scene", so CNNs can be used to interpret videos in a whole new way.
-                                        </small>
-                                    </p>
-                                    <a href="https://arxiv.org/abs/2308.00210" target="_blank">
-                                        <button class="btn btn-primary btn-research"><i class="bi bi-file-earmark-text-fill"></i> Paper</button></a>
-                                    <a href="https://github.com/miraclefactory/2sds" target="_blank">
-                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                    <a href="https://youtu.be/jerIZczBCow" target="_blank">
-                                        <button class="btn btn-danger btn-research"><i class="bi bi-youtube"></i> Keynote</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex align-items-center">
-                                    <img src="images/hsaois.jpg" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <h5 class="card-title">
-                                        Hyper Speed Automatic Optical Inspection System
-                                    </h5>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            <b>Yuelin Xin</b>*, Zihan Zhou*, Yuxuan Xia*, Jiuqiang Li, Qiyu Ou
-                                            <br/>Spring 2022
-                                        </small>
-                                    </p>
-                                    <p class="card-text">
-                                        <small>
-                                            The HSAOIS is an object detection
-                                            system that is designed and fine tuned based on YOLOv5 to detect defects 
-                                            on computer motherboards. We made great improvements on top of what YOLOv5 
-                                            already provides, by modifying the model's backbone, and introducing the 
-                                            2SDS algorithm, we were able to increase the inference speed by 25% without 
-                                            losing accuracy.
-                                        </small>
-                                    </p>
-                                    <a href="https://github.com/miraclefactory/submarine-hsaois" target="_blank">
-                                        <button class="btn btn-dark btn-research"><i class="bi bi-github"></i> Code</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="misc">
-                <div class="mb-5" id="membership">
-                    <h4>Memberships</h4>
-                    <p>
-                        <b>IEEE</b>: since summer 2023<br/>
-                        <b>ACM</b>: since summer 2023<br/>
-                        <b>Miracle Factory</b>: since spring 2022<br/> 
-                        <b>AAAS</b>: since spring 2021
-                    </p>
-                </div>
-    
-                <div class="mb-5" id="resume">
-                    <h4>Resume</h4>
-                    <p><a href="files/resume.pdf" target="_blank">
-                        <i class="bi bi-file-earmark-person"></i> Check out my resume here.</a>
-                    </p>
-                </div>
-
-                <div class="mb-5" id="uni-hunter">
-                    <h4>Uni Hunter</h4>
-                    <p>
-                        I have been lucky enough to visit many universities around the world,  
-                        and I've been keeping a list of them (chronologically):
-                    </p>
-                    <div class="card mb-3">
-                        <div style="height: 200px; overflow: scroll;">
-                            <ul>
-                                <li>University of Electronic Science and Technology of China (2013)</li>
-                                <li>Columbia University (2016)</li>
-                                <li>Yale University (2016)</li>
-                                <li>Princeton University (2016)</li>
-                                <li>Harvard University (2016)</li>
-                                <li>Massachusetts Institute of Technology (2016)</li>
-                                <li>Brigham Young University (2016)</li>
-                                <li>Sichuan University (2018)</li>
-                                <li>Southwest Jiaotong University (2020)</li>
-                                <li>Xihua University (2020)</li>
-                                <li>University of Leeds (2022)</li>
-                                <li>Leeds Beckett University (2022)</li>
-                                <li>Imperial College London (2023)</li>
-                                <li>University College London (2023)</li>
-                                <li>University of California, Irvine (2023)</li>
-                                <li>University of California, Merced (2023)</li>
-                                <li>California Institute of Technology (2023)</li>
-                                <li>University of California, Los Angeles (2023)</li>
-                                <li>University of California, Santa Barbara (2023)</li>
-                                <li>University of California, Santa Cruz (2023)</li>
-                                <li>Stanford University (2023)</li>
-                                <li>University of California, Berkeley (2023)</li>
-                                <li>University of Oxford (2024)</li>
-                                <li>University of Cambridge (2024)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-5" id="sim-racing">
-                    <h4>Sim Racing</h4>
-                    <p>
-                        I'm an amateur sim racer, I primarily race GT classes such as GT3, GT4 and GTE. 
-                        I've recently been racing the Porsche 911 RSR and the McLaren 720S GT3 Evo.
-                        My sim of choice is mainly Assetto Corsa, Assetto Corsa Competizione, and I'm getting into iRacing. 
-                    </p>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-3">
-                            <img src="images/porsche_logo.jpg" alt="porsche_logo" class="w-100">
-                        </div>
-                        <div class="col-9">
-                            <img src="images/porsche_911_rsr_2019.png" alt="porsche_911_rsr_2019" class="w-100">
-                        </div>
-                        <div class="col-3">
-                            <img src="images/mclaren_logo.png" alt="mclaren_logo" class="w-100">
-                        </div>
-                        <div class="col-9">
-                            <img src="images/mclaren_720s_gt3_evo.png" alt="mclaren_720s_gt3_evo" class="w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-        <hr/>
-        <footer class="col-mb-12 p-3 text-center">
-            <p class="text-body-secondary">
-                Copyright &copy; 
-                <span id="copyright-year"></span>  
-                Yuelin Xin, 
-                <a href="https://github.com/yuelinxin/yuelinxin.github.io/blob/main/LICENSE" target="_blank">
-                    MIT License</a>
-                <br/> 
-                Last updated: 2024-07-02
-            </p>
-        </footer>
     </div>
     <script>
         var btnCollapse = document.getElementsByClassName("btn-collapse");
@@ -593,10 +597,33 @@
             });
         }
 
+        let menuOpen = false;
+        function toggleMenu() {
+            const navbarMenu = document.getElementById('navbarMenu');
+            menuOpen = !menuOpen;
+            if (menuOpen) {
+                navbarMenu.classList.add('mobile-show');
+            } else {
+                navbarMenu.classList.remove('mobile-show');
+            }
+        }
+
         window.onload = function() {
             var currentYear = new Date().getFullYear();
             var copyrightElement = document.querySelector('#copyright-year');
             copyrightElement.innerHTML = currentYear;
+        }
+
+        function openInfoBanner() {
+            var infoBanner = document.getElementById('info-banner');
+            infoBanner.style.display = 'block';
+            infoBanner.style.visibility = 'visible';
+        }
+
+        function toggleInfoBanner() {
+            var infoBanner = document.getElementById('info-banner');
+            infoBanner.style.display = 'none';
+            infoBanner.style.visibility = 'hidden';
         }
     </script>
 </body>
