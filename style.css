@@ -25,7 +25,7 @@ body{
             'Droid Sans',
             'Helvetica Neue',
             sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -61,7 +61,7 @@ a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    top: 60px;
+    top: 53px;
     justify-content: center;
 }
 
