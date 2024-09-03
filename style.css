@@ -126,6 +126,8 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    /* border-top: 0.5px solid lightgray; */
+    border-bottom: 0.5px solid lightgray;
 }
 
 #info-banner .background-filter {

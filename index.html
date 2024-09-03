@@ -22,8 +22,8 @@
             cilix
         </a>
         <div>
-            <button class="navbar-toggler" type="button" onclick="toggleMenu()">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" id="menu-button" type="button" onclick="toggleMenu()" style="font-size: 26px;">
+                <i class="bi bi-list"></i>
             </button>
         </div>
         <div id="navbarMenu" class="mobile-hide">
@@ -419,7 +419,7 @@
                                 </p>
                                 <p class="card-text">
                                     He studied for 2 years at the University of Leeds in Computer Science.
-                                    He graduated with First Class honor. He has conducted research in 
+                                    He graduated with <b>First Class honor</b>. He has conducted research in 
                                     computer vision for medicine with <a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali" target="_blank">Dr. Sharib Ali</a>. 
                                     He has also pursued research in ML systems with <a href="https://zwang4.github.io/" target="_blank">Prof. Zheng Wang</a>.
                                 </p>
@@ -603,11 +603,14 @@
         let menuOpen = false;
         function toggleMenu() {
             const navbarMenu = document.getElementById('navbarMenu');
+            const menuButton = document.getElementById('menu-button')
             menuOpen = !menuOpen;
             if (menuOpen) {
                 navbarMenu.classList.add('mobile-show');
+                menuButton.innerHTML = "<i class='bi bi-x-lg'></i>"
             } else {
                 navbarMenu.classList.remove('mobile-show');
+                menuButton.innerHTML = "<i class='bi bi-list'></i>"
             }
         }
 
